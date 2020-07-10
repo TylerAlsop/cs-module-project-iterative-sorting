@@ -1,12 +1,9 @@
 def linear_search(arr, target):
     # Your code here
-    index = 0
 
-    for i in arr:
-        if i == target:
-            return index
-        else:
-            index += 1
+    for i in range(0, len(arr)):
+        if arr[i] == target:
+            return i
 
 
     return -1   # not found
